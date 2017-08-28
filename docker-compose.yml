@@ -5,6 +5,8 @@ services:
       context: ./refine
     ports:
       - '3333:3333'
+    environment:
+      - REFINE_MEMORY=2G
   virtuoso:
     build: 
       context: ./virtuoso
